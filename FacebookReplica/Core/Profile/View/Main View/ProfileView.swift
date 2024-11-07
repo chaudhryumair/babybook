@@ -25,13 +25,13 @@ struct ProfileView: View {
                     ProfileFriendsView(viewModel: viewModel, width: proxy.size.width)
                     DividerView(width: proxy.size.width)
                     ManagePostView(width: proxy.size.width)
-                    ForEach (0 ..< viewModel.posts.count) { index  in
-                        PostView(viewModel: viewModel,  index: 0, isVideo: false)
+                    ForEach (0 ..< viewModel.myPostIndexes.count) { index  in
+                        PostView(viewModel: viewModel,  index: viewModel.myPostIndexes[index], isVideo: false)
                     }
                 }
             }
             .scrollIndicators(.hidden)
-            .navigationTitle("Aatir Chaudhry")
+            .navigationTitle("\(viewModel.currentUser?.firstName ?? "" ) \(viewModel.currentUser?.familyName ?? "")")
             .toolbar{
                 ToolbarItem(placement: .topBarLeading) {
                     Button(action: {

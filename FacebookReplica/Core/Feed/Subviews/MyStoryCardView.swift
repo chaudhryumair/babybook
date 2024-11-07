@@ -6,19 +6,31 @@
 //
 
 import SwiftUI
-
+import Kingfisher
 
 struct MyStoryCardView: View {
+    @StateObject private var viewModel = FeedViewModel()
+    init(viewModel: FeedViewModel) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+    }
     var body: some View {
         ZStack(alignment: .top) {
             RoundedRectangle(cornerRadius:15)
                 .foregroundStyle(Color(.systemGray6))
                 .frame(width: 100, height :170)
-            Image("profilePic1")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 100,height: 110)
-                .clipShape(UnevenRoundedRectangle(cornerRadii: .init(topLeading: 15, topTrailing: 15)))
+            ZStack{
+                Image("no_profile")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 100,height: 110)
+                    .clipShape(UnevenRoundedRectangle(cornerRadii: .init(topLeading: 15, topTrailing: 15)))
+                KFImage(URL(string:viewModel.currentUser?.profileImageName ?? ""))
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 100,height: 110)
+                    .clipShape(UnevenRoundedRectangle(cornerRadii: .init(topLeading: 15, topTrailing: 15)))
+            }
+           
             VStack(spacing: 5){
                 Spacer()
                     .frame(height :90)
@@ -42,6 +54,6 @@ struct MyStoryCardView: View {
     }
 }
 
-#Preview {
-    MyStoryCardView()
+#Preview(traits: .sizeThatFitsLayout) {
+    MyStoryCardView(viewModel: FeedViewModel())
 }

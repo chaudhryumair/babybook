@@ -33,8 +33,8 @@ final class AuthService: ObservableObject{
          do {
              let result = try await Auth.auth().createUser(withEmail: email, password: password)
              AuthService.shared.userSession = result.user
-             try await uploadUserDataToFirebase(withUserFirstName: firstName, withUserFamilyName: familyName, withUserEmail: email,
-                                                withUserAge: age, withUserGender: gender, withUserID: result.user.uid)
+             try await uploadUserDataToFirebase(withUserFirstName: firstName, withUserFamilyName: familyName, withUserEmail: email,  withUserAge: age, withUserGender: gender, withUserID: result.user.uid)
+             try await UserService.shared.fetchUser() 
          }
         catch{
             print("DEBUG ERROR: \(error.localizedDescription)")

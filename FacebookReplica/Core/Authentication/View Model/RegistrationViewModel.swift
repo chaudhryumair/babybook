@@ -21,9 +21,9 @@ class RegistrationViewModel: ObservableObject {
     // MARK: - create user 
     func createUser() async throws{
         if let age = Int(age){
-            try await AuthService.shared.signUpUser(withUserFirstName: email, withUserFamilyName: familyName, withUserEmail: email, withUserAge: age, withUserPassword: password, withUserGender: gender)
+            try await AuthService.shared.signUpUser(withUserFirstName: firstName, withUserFamilyName: familyName, withUserEmail: email, withUserAge: age, withUserPassword: password, withUserGender: gender)
         }else{
-            try await AuthService.shared.signUpUser(withUserFirstName: email, withUserFamilyName: familyName, withUserEmail: email, withUserAge: 0, withUserPassword: password, withUserGender: gender)
+            try await AuthService.shared.signUpUser(withUserFirstName: firstName, withUserFamilyName: familyName, withUserEmail: email, withUserAge: 0, withUserPassword: password, withUserGender: gender)
         }
        
     }

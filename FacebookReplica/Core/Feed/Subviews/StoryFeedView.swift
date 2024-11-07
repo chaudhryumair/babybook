@@ -15,7 +15,7 @@ struct StoryFeedView: View {
     var body: some View {
         ScrollView(.horizontal) {
             HStack {
-                MyStoryCardView()
+                MyStoryCardView(viewModel: viewModel)
                 ForEach (0 ..< viewModel.friends.count) { index in
 
                     StoryCardView(viewModel: viewModel, index: index)

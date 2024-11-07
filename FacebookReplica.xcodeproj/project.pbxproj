@@ -21,6 +21,7 @@
 		0146EDB02C1278B20054E983 /* LabelImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146EDAF2C1278B20054E983 /* LabelImageView.swift */; };
 		0146EDB22C127EE30054E983 /* ManagePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146EDB12C127EE30054E983 /* ManagePostView.swift */; };
 		0146EDB42C12802B0054E983 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0146EDB32C12802B0054E983 /* AppColors.swift */; };
+		0155DC822CBD455800D62F29 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0155DC812CBD455800D62F29 /* ImageUploader.swift */; };
 		015828B02C28BEA900AAAF15 /* LoginAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015828AF2C28BEA900AAAF15 /* LoginAgreementView.swift */; };
 		015828B22C28CFE500AAAF15 /* LoginAddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015828B12C28CFE500AAAF15 /* LoginAddEmailView.swift */; };
 		015828B42C28D27100AAAF15 /* LoginPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015828B32C28D27100AAAF15 /* LoginPasswordView.swift */; };
@@ -42,6 +43,7 @@
 		01A263EA2C19E174005C0BC3 /* VideoOptionViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A263E92C19E174005C0BC3 /* VideoOptionViewModifier.swift */; };
 		01A263ED2C19F098005C0BC3 /* VideoOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A263EC2C19F098005C0BC3 /* VideoOptionView.swift */; };
 		01B5A2332C10C26D00D07FC6 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B5A2322C10C26D00D07FC6 /* PostView.swift */; };
+		01BE56032CD83F38003566BF /* Post Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BE56022CD83F38003566BF /* Post Service.swift */; };
 		01C716652C1646C800A3379C /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C716642C1646C800A3379C /* CreatePostView.swift */; };
 		01E02DE12C27652700576789 /* LoginGenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E02DE02C27652700576789 /* LoginGenderView.swift */; };
 		01E02DE32C27755A00576789 /* LoginAgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E02DE22C27755A00576789 /* LoginAgeView.swift */; };
@@ -59,6 +61,7 @@
 		01E91E632C2A1DAF002EA4A3 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E91E622C2A1DAF002EA4A3 /* RootViewModel.swift */; };
 		01E91E652C2A209D002EA4A3 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E91E642C2A209D002EA4A3 /* RootView.swift */; };
 		01E91E672C2A2706002EA4A3 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E91E662C2A2706002EA4A3 /* UserService.swift */; };
+		01EE516D2CD6ED0B000DF5CB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 01EE516C2CD6ED0B000DF5CB /* Kingfisher */; };
 		D2AC83EE2BF2CA0D00C5FBF2 /* FacebookReplicaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC83ED2BF2CA0D00C5FBF2 /* FacebookReplicaApp.swift */; };
 		D2AC83F02BF2CA0D00C5FBF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC83EF2BF2CA0D00C5FBF2 /* ContentView.swift */; };
 		D2AC83F22BF2CA0F00C5FBF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AC83F12BF2CA0F00C5FBF2 /* Assets.xcassets */; };
@@ -84,6 +87,7 @@
 		0146EDAF2C1278B20054E983 /* LabelImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelImageView.swift; sourceTree = "<group>"; };
 		0146EDB12C127EE30054E983 /* ManagePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePostView.swift; sourceTree = "<group>"; };
 		0146EDB32C12802B0054E983 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		0155DC812CBD455800D62F29 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		015828AF2C28BEA900AAAF15 /* LoginAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAgreementView.swift; sourceTree = "<group>"; };
 		015828B12C28CFE500AAAF15 /* LoginAddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAddEmailView.swift; sourceTree = "<group>"; };
 		015828B32C28D27100AAAF15 /* LoginPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordView.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 		01A263EB2C19ED52005C0BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		01A263EC2C19F098005C0BC3 /* VideoOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoOptionView.swift; sourceTree = "<group>"; };
 		01B5A2322C10C26D00D07FC6 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		01BE56022CD83F38003566BF /* Post Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post Service.swift"; sourceTree = "<group>"; };
 		01C716642C1646C800A3379C /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 		01E02DE02C27652700576789 /* LoginGenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGenderView.swift; sourceTree = "<group>"; };
 		01E02DE22C27755A00576789 /* LoginAgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAgeView.swift; sourceTree = "<group>"; };
@@ -139,6 +144,7 @@
 				01E91E562C2A0281002EA4A3 /* FirebaseStorage in Frameworks */,
 				01E91E522C2A0281002EA4A3 /* FirebaseFirestore in Frameworks */,
 				01E91E542C2A0281002EA4A3 /* FirebaseFirestoreSwift in Frameworks */,
+				01EE516D2CD6ED0B000DF5CB /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +359,22 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		01BE56002CD83F19003566BF /* Profile Service */ = {
+			isa = PBXGroup;
+			children = (
+				0155DC812CBD455800D62F29 /* ImageUploader.swift */,
+			);
+			path = "Profile Service";
+			sourceTree = "<group>";
+		};
+		01BE56012CD83F29003566BF /* Post Service */ = {
+			isa = PBXGroup;
+			children = (
+				01BE56022CD83F38003566BF /* Post Service.swift */,
+			);
+			path = "Post Service";
+			sourceTree = "<group>";
+		};
 		01C716662C1647ED00A3379C /* Main view */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +398,13 @@
 				01C716692C16480A00A3379C /* Subviews */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		01CDF1A92CBD505A00054295 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		01E18D5A2C17AB5100A4BC3D /* View */ = {
@@ -449,6 +478,7 @@
 			children = (
 				D2AC83EC2BF2CA0D00C5FBF2 /* FacebookReplica */,
 				D2AC83EB2BF2CA0D00C5FBF2 /* Products */,
+				01CDF1A92CBD505A00054295 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -496,6 +526,8 @@
 		D2AC83FC2BF2CBC600C5FBF2 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				01BE56012CD83F29003566BF /* Post Service */,
+				01BE56002CD83F19003566BF /* Profile Service */,
 				01E91E5D2C2A0B92002EA4A3 /* Authentication Service */,
 				01E91E5C2C2A0B7F002EA4A3 /* Registration Service */,
 			);
@@ -662,6 +694,7 @@
 				01E91E512C2A0281002EA4A3 /* FirebaseFirestore */,
 				01E91E532C2A0281002EA4A3 /* FirebaseFirestoreSwift */,
 				01E91E552C2A0281002EA4A3 /* FirebaseStorage */,
+				01EE516C2CD6ED0B000DF5CB /* Kingfisher */,
 			);
 			productName = FacebookReplica;
 			productReference = D2AC83EA2BF2CA0D00C5FBF2 /* FacebookReplica.app */;
@@ -693,6 +726,7 @@
 			mainGroup = D2AC83E12BF2CA0D00C5FBF2;
 			packageReferences = (
 				01E91E4E2C2A0281002EA4A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				01EE516B2CD6ED0B000DF5CB /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = D2AC83EB2BF2CA0D00C5FBF2 /* Products */;
 			projectDirPath = "";
@@ -744,6 +778,7 @@
 				01E18D622C17B28800A4BC3D /* TagView.swift in Sources */,
 				01A263ED2C19F098005C0BC3 /* VideoOptionView.swift in Sources */,
 				01730A472C109511006CE2B4 /* StoryCardView.swift in Sources */,
+				0155DC822CBD455800D62F29 /* ImageUploader.swift in Sources */,
 				012F0E0B2C264C6D00591346 /* LoginAddNameView.swift in Sources */,
 				D2F57FCB2C0BD234009158D5 /* ProfileView.swift in Sources */,
 				01E91E5F2C2A10DC002EA4A3 /* User.swift in Sources */,
@@ -773,6 +808,7 @@
 				01E91E632C2A1DAF002EA4A3 /* RootViewModel.swift in Sources */,
 				D2AC83EE2BF2CA0D00C5FBF2 /* FacebookReplicaApp.swift in Sources */,
 				01E02DE32C27755A00576789 /* LoginAgeView.swift in Sources */,
+				01BE56032CD83F38003566BF /* Post Service.swift in Sources */,
 				01B5A2332C10C26D00D07FC6 /* PostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -907,6 +943,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FacebookReplica/Preview Content\"";
+				DEVELOPMENT_TEAM = P7L9HF6DNB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FacebookReplica/Info.plist;
@@ -937,6 +974,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FacebookReplica/Preview Content\"";
+				DEVELOPMENT_TEAM = P7L9HF6DNB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FacebookReplica/Info.plist;
@@ -991,6 +1029,14 @@
 				minimumVersion = 10.28.1;
 			};
 		};
+		01EE516B2CD6ED0B000DF5CB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1013,6 +1059,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 01E91E4E2C2A0281002EA4A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		01EE516C2CD6ED0B000DF5CB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01EE516B2CD6ED0B000DF5CB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

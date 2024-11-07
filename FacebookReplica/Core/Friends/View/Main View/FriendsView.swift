@@ -9,8 +9,10 @@ import SwiftUI
 
 struct FriendsView: View {
     private var viewModel = FriendsViewModel()
+        
 
     var body: some View {
+        
         NavigationStack{
             ScrollView{
                 VStack(alignment: .leading, spacing: 20){
@@ -46,6 +48,7 @@ struct FriendsView: View {
                     Spacer()
                 }
                 .padding(.vertical )
+                
                     
                 
             }
@@ -63,7 +66,7 @@ struct FriendsView: View {
 
             }
         }
-    }
+            }
 }
 
 #Preview {

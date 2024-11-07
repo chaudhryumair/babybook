@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 
 struct FriendsCellView: View {
@@ -18,17 +19,27 @@ struct FriendsCellView: View {
 
     var body: some View {
         HStack{
-            Image("\(viewModel.friendsRequest[index].profileImageName ?? "")")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 70,height: 70)
-                .clipShape(Circle())
+            ZStack{
+                Image("no_profile")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 70,height: 70)
+                    .clipShape(Circle())
+                KFImage(URL(string: viewModel.friendsRequest[index].profileImageName ?? ""))
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 70,height: 70)
+                    .clipShape(Circle())
+            }
+           
             VStack(alignment: .leading){
-                Text("\(viewModel.friendsRequest[index].firstName)\(viewModel.users[index].familyName)")
+                Text("\(viewModel.friendsRequest[index].firstName)\(viewModel.friendsRequest[index].familyName)")
                     .font(.headline)
                     .fontWeight(.semibold)
                 HStack{
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: {
+                        
+                    }, label: {
                         Text("Confirm")
                             .foregroundStyle(.white)
                             .frame(width: 120,height: 32)
@@ -36,7 +47,9 @@ struct FriendsCellView: View {
                             .clipShape(RoundedRectangle(cornerRadius:8))
                         
                     })
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: {
+                        
+                    }, label: {
                         Text("Delete")
                             .foregroundStyle(.black)
                             .frame(width: 120,height: 32)
