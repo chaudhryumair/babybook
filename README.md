@@ -1,0 +1,1 @@
+ BabyBook, a comprehensive social media application developed using SwiftUI and powered by Firebase. BabyBook replicates and enhances core functionalities of major platforms like Facebook, featuring News Feed, Friends, Messaging, Groups, Events, and a fully integrated Marketplace.
